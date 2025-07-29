@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro - Wayfar</title>
+  <link rel="stylesheet" href="cadastro.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap">
+</head>
+<body>
+  <main class="tela">
+    <section class="box">
+      <article class="logo-area">
+        <img src="Imagens/wayfar.png" alt="Logo Wayfar" />
+        <h2>WAYFAR</h2>
+        <p>Seu app de viagens</p>
+      </article>
+      <form class="form-area" autocomplete="off">
+        <h3>Cadastre-se</h3>
+        <label for="birth-day">Data de nascimento</label>
+        <section class="birth">
+          <input type="number" id="birth-day" placeholder="Dia" min="1" max="31" required />
+          <input type="number" id="birth-month" placeholder="Mês" min="1" max="12" required />
+          <input type="number" id="birth-year" placeholder="Ano" min="1900" max="2025" required />
+        </section>
+        <label for="usuario">Usuário</label>
+        <input type="text" id="usuario" placeholder="Usuário" required />
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" placeholder="Senha" required />
+        <label>Gênero</label>
+        <section class="gender">
+          <label><input type="radio" name="gender" value="feminino" required> Feminino</label>
+          <label><input type="radio" name="gender" value="masculino"> Masculino</label>
+          <label><input type="radio" name="gender" value="outro"> Outro</label>
+        </section>
+        <button type="submit"><a href="inicial.html">ENTRAR</a></button>
+        <a href="login.html" class="cancelar">Cancelar</a>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

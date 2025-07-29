@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publicação - Wayfar</title>
+  <link rel="stylesheet" href="publicacao.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <aside class="menu-lateral">
+    <div class="logo-menu">
+      <img src="Imagens/wayfar.png" alt="Logo Wayfar">
+      <span class="logo-titulo">WAYFAR</span>
+      <span class="logo-sub">seu app de viagens</span>
+    </div>
+    <nav>
+      <ul>
+        <li class="li-busca">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Pesquisar..." />
+        </li>
+        <li><a href="inicial.html"><i class="fas fa-home"></i> Início</a></li>
+        <li><a href="comunidade.HTML"><i class="fas fa-users"></i> Comunidade</a></li>
+        <li><a href="promocoes.html"><i class="fas fa-tags"></i> Promoções</a></li>
+        <li><a href="mensagem.html"><i class="fas fa-envelope"></i> Mensagens</a></li>
+        <li><a href="perfil.html"><i class="fas fa-user"></i> Perfil</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main class="publicacao-main">
+    <section class="publicacao-topo">
+      <button class="btn-voltar" title="Voltar"><i class="fas fa-arrow-left"></i></button>
+      <div class="publicacao-usuario">
+        <a href="perfil.html" title="Ver perfil">
+          <img src="Imagens/luis.png" alt="Usuário" class="avatar-usuario">
+        </a>
+        <div>
+          <span class="nome-usuario">Eu</span>
+          <span class="status-usuario"><i class="fas fa-plane"></i> está viajando</span>
+        </div>
+      </div>
+      <button class="btn-opcoes" title="Mais opções"><i class="fas fa-ellipsis-h"></i></button>
+    </section>
+
+    <section class="publicacao-foto">
+      <img src="Imagens/Luizao praia.png" alt="Publicação de viagem">
+    </section>
+
+    <section class="publicacao-acoes">
+      <div class="acoes-esquerda">
+        <button class="btn-acao" title="Comentar"><i class="fa-solid fa-comment"></i></button>
+        <button class="btn-acao" title="Compartilhar"><i class="fa-solid fa-paper-plane"></i></button>
+      </div>
+      <button class="btn-curtir" title="Curtir"><i class="fa-solid fa-heart"></i></button>
+    </section>
+
+    <section class="publicacao-comentarios">
+      <div class="comentario">
+        <img src="Imagens/Pelicel.png" alt="Pepelicel" class="avatar-comentario">
+        <div class="comentario-conteudo">
+          <span class="comentario-nome"><i class="fas fa-user-circle"></i> Pepelicel</span>
+          <span class="comentario-texto">Esse lugar é lindo!!! mas quem tá nele é mais ainda</span>
+          <span class="comentario-tempo"><i class="far fa-clock"></i> há 1h</span>
+        </div>
+      </div>
+      <div class="comentario">
+        <img src="Imagens/Gabriel.png" alt="Gabriel" class="avatar-comentario">
+        <div class="comentario-conteudo">
+          <span class="comentario-nome"><i class="fas fa-user-circle"></i> Gabriel</span>
+          <span class="comentario-texto">estou apaixonadooo</span>
+          <span class="comentario-tempo"><i class="far fa-clock"></i> há 30min</span>
+        </div>
+      </div>
+      <button class="btn-ver-mais"><i class="fas fa-angle-down"></i> Exibir mais</button>
+    </section>
+
+    <section class="publicacao-reacoes">
+      <img src="Imagens/Emojis/emoji5.png" alt="Amei" class="emoji-reacao" title="Amei">
+      <img src="Imagens/Emojis/emoji3.png" alt="Haha" class="emoji-reacao" title="Haha">
+      <img src="Imagens/Emojis/Emoji4.png" alt="Uau" class="emoji-reacao" title="Uau">
+      <img src="Imagens/Emojis/emoji2.png" alt="Triste" class="emoji-reacao" title="Triste">
+      <img src="Imagens/Emojis/emoji1.png" alt="Bravo" class="emoji-reacao" title="Bravo">
+    </section>
+  </main>
+ <footer>
+    <div class="footer-noticias-conteudo">
+      <h2>Fique por Dentro</h2>
+      <p>Inscreva-se e seja o primeiro a saber sobre as novidades e muito mais!</p>
+      <form class="footer-form">
+        <input type="email" placeholder="Seu e-mail" required>
+        <button type="submit"><i class="fas fa-paper-plane"></i> ENVIAR</button>
+      </form>
+      <span class="footer-copy">&copy; 2025 Wayfar. Todos os direitos reservados.</span>
+    </div>
+  </footer>
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const btnCurtir = document.querySelector('.btn-curtir');
+    btnCurtir.addEventListener('click', function() {
+      btnCurtir.classList.toggle('curtido');
+    });
+  });
+</script>
+</body>
+</html>

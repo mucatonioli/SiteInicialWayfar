@@ -1,0 +1,529 @@
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #f7f7f7;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Conteúdo Principal */
+.conteudo-principal {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Título do Destino */
+.cabecalho-destino h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Grade da Galeria de Imagens */
+.grade-galeria {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Imagem principal ocupa 2/3, sub-imagens 1/3 */
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.imagem-principal img {
+    width: 100%;
+    height: 400px; /* Altura fixa para a imagem principal */
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.sub-imagens {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 colunas para as sub-imagens */
+    gap: 10px;
+}
+
+.sub-imagens img {
+    width: 100%;
+    height: 200px; /* Altura fixa para as sub-imagens */
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Seção de Resumo da Avaliação */
+.resumo-avaliacao {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+    margin-bottom: 30px;
+}
+
+.resumo-avaliacao h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+
+.metricas-chave {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Colunas flexíveis */
+    gap: 15px;
+    text-align: center;
+}
+
+.item-metrica {
+    background-color: #f9f9f9;
+    padding: 15px 10px;
+    border-radius: 5px;
+    border: 1px solid #eee;
+}
+
+.item-metrica span:first-child {
+    display: block;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.item-metrica span:last-child {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFC107; /* Cor da estrela */
+}
+
+/* Seção de Comentários (Avaliações dos Usuários) */
+.avaliacoes {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+    margin-bottom: 30px;
+}
+
+.cartao-avaliacao {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+    align-items: flex-start; /* Alinha a imagem e o texto no topo */
+}
+
+.avatar-avaliador {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #eee;
+    flex-shrink: 0; /* Impede que a imagem encolha */
+}
+
+.conteudo-avaliacao h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.conteudo-avaliacao p {
+    font-size: 15px;
+    color: #666;
+}
+
+.botao-mostrar-mais {
+    display: block;
+    width: fit-content;
+    margin: 20px auto 0;
+    padding: 10px 25px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #555;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.botao-mostrar-mais:hover {
+    background-color: #f0f0f0;
+}
+
+/* Seção de Sugestão de Hospedagem */
+.sugestao-hospedagem {
+    margin-bottom: 50px;
+}
+
+.sugestao-hospedagem h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: left; /* Alinha o título à esquerda */
+}
+
+.cartao-hotel {
+    display: flex;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+    margin-bottom: 20px;
+    overflow: hidden; /* Garante que a borda arredondada funcione com a imagem */
+}
+
+.imagem-hotel {
+    width: 180px; /* Largura fixa para a imagem do hotel */
+    height: 180px; /* Ajustado para ser mais proporcional ao layout da imagem */
+    object-fit: cover;
+    flex-shrink: 0; /* Impede que a imagem encolha */
+}
+
+.informacao-hotel {
+    padding: 15px;
+    flex-grow: 1; /* Permite que o info ocupe o espaço restante */
+}
+
+.informacao-hotel h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.informacao-hotel p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.informacao-hotel .localizacao-hotel {
+    font-weight: bold;
+}
+
+.informacao-hotel .descricao-hotel {
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.pontuacao-hotel {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    width: 90px; /* Largura fixa para a coluna da pontuação */
+    flex-shrink: 0;
+}
+
+.pontuacao-hotel span:first-child {
+    font-size: 14px;
+}
+
+.pontuacao-hotel span:nth-child(2) {
+    font-size: 28px;
+    line-height: 1;
+    margin-top: 5px;
+}
+
+/* Responsividade Básica (para telas menores que 768px) */
+@media (max-width: 768px) {
+    .barra-superior {
+        padding: 10px 15px;
+    }
+
+    .caixa-busca {
+        margin: 0 10px;
+    }
+
+    .conteudo-principal {
+        margin: 15px auto;
+        padding: 0 15px;
+    }
+
+    .grade-galeria {
+        grid-template-columns: 1fr; /* Uma coluna para todas as imagens em telas menores */
+    }
+
+    .imagem-principal img, .sub-imagens img {
+        height: auto; /* Altura automática para manter proporção */
+        max-height: 250px; /* Limita altura para não ficar muito grande */
+    }
+
+    .sub-imagens {
+        grid-template-columns: 1fr; /* Uma coluna para as sub-imagens */
+    }
+
+    .resumo-avaliacao, .avaliacoes, .sugestao-hospedagem {
+        padding: 20px;
+    }
+
+    .metricas-chave {
+        grid-template-columns: 1fr; /* Uma coluna para as métricas */
+    }
+
+    .cartao-avaliacao {
+        flex-direction: column; /* Avatar acima do texto */
+        align-items: center;
+        text-align: center;
+    }
+
+    .cartao-hotel {
+        flex-direction: column; /* Imagem acima do texto do hotel */
+    }
+
+    .imagem-hotel {
+        width: 100%; /* Imagem do hotel ocupa toda a largura */
+        height: 200px; /* Altura padrão para imagem do hotel */
+    }
+
+    .pontuacao-hotel {
+        flex-direction: row; /* Pontuação e texto lado a lado no mobile */
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 10px;
+        border-top: 1px solid rgba(255,255,255,0.2);
+    }
+    .pontuacao-hotel span:nth-child(2) {
+        margin-left: 10px;
+    }
+    .pontuacao-hotel small {
+        margin-left: 10px;
+        margin-top: 0;
+    }
+}
+/*NECESSARIO EM TODOS*/
+:root {
+  --laranja-principal: #ef7121;   /* Laranja */
+  --azul-claro: #61a0bf;          /* Azul Claro */
+  --verde-azulado: #2a9188;       /* Verde Azulado */
+  --cinza-claro: #f4f4f4;         /* Cinza Claro */
+  --preto: #000000;               /* Preto */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu-lateral {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 240px;
+  height: 100vh;
+  background: var(--cinza-claro);
+  color: var(--preto);
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+  font-family: 'Montserrat', sans-serif;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.1);
+}
+
+.logo-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 0 24px 0;
+  background: #f8f8f8;
+}
+
+.logo-menu img {
+  width: 180px;
+  height: 225px;
+  margin-bottom: 8px;
+}
+
+.logo-titulo {
+  color: var(--azul-claro);
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 2px;
+}
+
+.logo-sub {
+  color: var(--laranja-principal);
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.menu-lateral nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-lateral nav ul li {
+  margin: 18px 0;
+}
+
+.menu-lateral nav ul li a {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: var(--laranja-principal);
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 10px 32px;
+  border-radius: 25px 0 0 25px;
+  transition: background 0.2s, color 0.2s;
+}
+
+/*MUDAR DEPOIS*/
+.menu-lateral nav ul li a:hover,
+.menu-lateral nav ul li a:focus {
+  background: var(--laranja-principal);
+  color:cornsilk;
+}
+
+.menu-lateral i {
+  font-size: 1.3rem;
+  width: 24px;
+  text-align: center;
+}
+
+.li-busca {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 32px;
+  margin-top: 10px;
+}
+
+.li-busca input[type="text"] {
+  width: 100%;
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  background:#ffffff;
+  color: var(--preto);
+  font-size: 1rem;
+  outline: none;
+  border: #ef7121 2px solid;
+}
+/*NECESSARIO EM TODOS*/
+main {
+  margin-left: 240px; 
+  padding: 40px 24px;
+  min-height: 100vh;
+  background-color: hsl(0, 0%, 100%);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+  footer{
+  background: #292726;
+  color: var(--cinza-claro);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 0 16px 0;
+  margin-left: 240px; /* para alinhar com o menu lateral */
+}
+
+.footer-noticias-conteudo h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: var(--cinza-claro);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer-noticias-conteudo p {
+  font-size: 1.2rem;
+  margin-bottom: 24px;
+  color: var(--cinza-claro);
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.footer-form input[type="email"] {
+  padding: 12px 24px;
+  border-radius: 16px;
+  border: none;
+  font-size: 1rem;
+  width: 220px;
+  background: #fff;
+  color: var(--preto);
+  outline: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer-form button {
+  padding: 12px 32px;
+  border-radius: 16px;
+  border: none;
+  background: var(--laranja-principal);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer-form button:hover {
+  background: var(--azul-claro);
+}
+
+.footer-copy {
+  display: block;
+  margin-top: 8px;
+  font-size: 1rem;
+  color: var(--cinza-claro);
+  font-family: 'Montserrat', sans-serif;
+}
+/* Adicione ao final do seu rj.css */
+/* ...existing code... */
+.cabecalho-destino h1 i {
+  color: var(--laranja-principal);
+  margin-right: 8px;
+}
+
+.resumo-avaliacao h2 i {
+  color: var(--laranja-principal);
+  margin-right: 8px;
+}
+
+.item-metrica span:first-child i {
+  color: var(--azul-claro);
+  margin-right: 4px;
+}
+
+.item-metrica span:last-child i {
+  color: #FFC107;
+  margin-left: 2px;
+}
+
+.cartao-avaliacao h3 i {
+  color: var(--azul-claro);
+  margin-right: 6px;
+}
+
+.botao-mostrar-mais i {
+  margin-right: 6px;
+  color: var(--laranja-principal);
+}
+
+.sugestao-hospedagem h2 i {
+  color: var(--laranja-principal);
+  margin-right: 8px;
+}
+
+.informacao-hotel .localizacao-hotel i,
+.informacao-hotel .distancia-hotel i {
+  color: var(--azul-claro);
+  margin-right: 4px;
+}
+
+.pontuacao-hotel span i {
+  margin-right: 4px;
+}

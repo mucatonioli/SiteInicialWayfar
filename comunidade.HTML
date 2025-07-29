@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COMUNIDADE</title>
+  <link rel="stylesheet" href="comunidade.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <aside class="menu-lateral">
+    <div class="logo-menu">
+      
+      <img src="Imagens/wayfar.png" alt="Logo Wayfar">
+      <span class="logo-titulo">WAYFAR</span>
+      <span class="logo-sub">seu app de viagens</span>
+    
+    </div>
+    <nav>
+      <ul>
+        <li class="li-busca">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Pesquisar..." />
+        </li>
+        <li><a href="inicial.html"><i class="fas fa-home"></i> Início</a></li>
+        <li><a href="comunidade.html"><i class="fas fa-users"></i> Comunidade</a></li>
+        <li><a href="promocoes.html"><i class="fas fa-tags"></i> Promoções</a></li>
+        <li><a href="mensagem.html"><i class="fas fa-envelope"></i> Mensagens</a></li>
+        <li><a href="perfil.html"><i class="fas fa-user"></i> Perfil</a></li>
+      </ul>
+    </nav>
+  </aside>
+  <main>
+    <section class="comunidade-header">
+      <h1><i class="fas fa-globe-americas"></i> COMUNIDADE WAYFAR</h1>
+      <p><i class="fas fa-comments"></i> Compartilhe experiências, dicas e fotos das suas viagens com outros exploradores!</p>
+    </section>
+
+    <section class="comunidade-novo-post">
+      <img src="Imagens/luis.png" alt="Seu avatar" class="avatar-post">
+      <form>
+        <textarea placeholder="Compartilhe uma dica, foto ou experiência de viagem..."></textarea>
+        <div class="comunidade-novo-post-actions">
+          <label class="upload-img">
+            <i class="fas fa-image"></i> Foto
+            <input type="file" accept="image/*" style="display:none;">
+          </label>
+          <button type="submit"><i class="fas fa-paper-plane"></i> Publicar</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="comunidade-feed">
+      <div class="comunidade-post">
+        <img src="Imagens/Gabs.webp" alt="Avatar" class="avatar-post">
+        <div class="post-content">
+          <div class="post-header">
+            <span class="post-user"> Gabs </span>
+            <span class="post-date"><i class="far fa-clock"></i> há 2 horas</span>
+          </div>
+          <p>Acabei de voltar de Gramado! Recomendo muito o passeio de Maria Fumaça e o café colonial. Quem quiser dicas, só perguntar! 🍫🚂</p>
+          <img src="Imagens/Gramado.png" alt="Gramado" class="post-img">
+          <div class="post-actions">
+            <button><i class="fas fa-heart"></i> Curtir</button>
+            <button><i class="fas fa-comment"></i> Comentar</button>
+          </div>
+        </div>
+      </div>
+      <div class="comunidade-post">
+        <img src="Imagens/luis.png" alt="Avatar" class="avatar-post">
+        <div class="post-content">
+          <div class="post-header">
+            <span class="post-user"> Eu</span>
+            <span class="post-date"><i class="far fa-clock"></i> há 5 horas</span>
+          </div>
+          <p>Alguém já foi para Balneário Camboriú? Vale a pena subir na roda-gigante?</p>
+          <img src="Imagens/camboriu.jpg" alt="Balneário Camboriú" class="post-img">
+          <div class="post-actions">
+            <button><i class="fas fa-heart"></i> Curtir</button>
+            <button><i class="fas fa-comment"></i> Comentar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+ <footer>
+    <div class="footer-noticias-conteudo">
+      <h2>Fique por Dentro</h2>
+      <p>Inscreva-se e seja o primeiro a saber sobre as novidades e muito mais!</p>
+      <form class="footer-form">
+        <input type="email" placeholder="Seu e-mail" required>
+        <button type="submit"><i class="fas fa-paper-plane"></i> ENVIAR</button>
+      </form>
+      <span class="footer-copy">&copy; 2025 Wayfar. Todos os direitos reservados.</span>
+    </div>
+  </footer>
+</body>
+</html>

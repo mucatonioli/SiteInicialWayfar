@@ -1,0 +1,371 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  height: 100vh;
+  background-color: #000;
+  color: white;
+}
+
+/* Sidebar */
+.lateral {
+  width: 320px;
+  background-color: #ffffff;
+  border-right: 1px solid #333;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  margin-left: 240px;
+  padding: 32px 0 32px 0;
+  min-height: 100vh;
+}
+
+.lateral-header {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  justify-content: space-between;
+  border-bottom: 1px solid #222;
+}
+
+.lateral-header h1 {
+  font-size: 18px;
+  color: white;
+}
+
+.lateral-header button {
+  background: none;
+  border: none;
+  color: #aaa;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 5px 10px;
+  transition: color 0.2s;
+}
+
+
+.chat {
+  padding: 15px;
+  border-bottom: 1px solid #222;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.chat:hover {
+  background-color: #676666;
+}
+
+.chat img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 12px;
+  border: 1px solid #444;
+}
+
+.chat-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-name {
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  margin-bottom: 4px;
+}
+
+.chat-message {
+  font-size: 0.85em;
+  color: #000000;
+}
+
+/* imagem MEio */
+.meio {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  text-align: center;
+  padding: 40px;
+}
+
+.meio-icon {
+  font-size: 64px;
+  margin-bottom: 25px;
+}
+
+.meio h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #ef7121;
+}
+
+.meio p {
+  color: #a8a8a8;
+  margin-bottom: 25px;
+  max-width: 400px;
+}
+
+.meio button {
+  background-color: #4267B2;
+  border: none;
+  padding: 12px 24px;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  transition: background 0.3s;
+}
+
+.meio button:hover {
+  background-color: #365899;
+}
+/* LOGO */
+.logo {
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #222;
+  background-color: #111;
+}
+
+.logo img {
+  max-width: 120px;
+  height: auto;
+  border-radius: 200px;
+}
+.lateral-header a {
+  color: #aaa;
+  text-decoration: none;
+  font-size: 16px}
+
+  .pesquisa {
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+  border-bottom: 1px solid #222;
+  background-color: #dadada;
+}
+
+.pesquisa input {
+  flex: 4;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 6px 0 0 6px;
+  background-color: #fffdfd;
+  color: white;
+  font-size: 14px;
+  outline: none;
+}
+
+.pesquisa button {
+  padding: 10px 14px;
+  background-color: #4267B2;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  color: white;
+  cursor: pointer;
+}
+/*NECESSARIO EM TODOS*/
+:root {
+  --laranja-principal: #ef7121;   /* Laranja */
+  --azul-claro: #61a0bf;          /* Azul Claro */
+  --verde-azulado: #2a9188;       /* Verde Azulado */
+  --cinza-claro: #f4f4f4;         /* Cinza Claro */
+  --preto: #000000;               /* Preto */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu-lateral {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 240px;
+  height: 100vh;
+  background: var(--cinza-claro);
+  color: var(--preto);
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+  font-family: 'Montserrat', sans-serif;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.1);
+}
+
+.logo-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 0 24px 0;
+  background: #f8f8f8;
+}
+
+.logo-menu img {
+  width: 180px;
+  height: 225px;
+  margin-bottom: 8px;
+}
+
+.logo-titulo {
+  color: var(--azul-claro);
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 2px;
+}
+
+.logo-sub {
+  color: var(--laranja-principal);
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.menu-lateral nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-lateral nav ul li {
+  margin: 18px 0;
+}
+
+.menu-lateral nav ul li a {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: var(--laranja-principal);
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 10px 32px;
+  border-radius: 25px 0 0 25px;
+  transition: background 0.2s, color 0.2s;
+}
+
+/*MUDAR DEPOIS*/
+.menu-lateral nav ul li a:hover,
+.menu-lateral nav ul li a:focus {
+  background: var(--laranja-principal);
+  color:cornsilk;
+}
+
+.menu-lateral i {
+  font-size: 1.3rem;
+  width: 24px;
+  text-align: center;
+}
+
+.li-busca {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 32px;
+  margin-top: 10px;
+}
+
+.li-busca input[type="text"] {
+  width: 100%;
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  background:#ffffff;
+  color: var(--preto);
+  font-size: 1rem;
+  outline: none;
+  border: #ef7121 2px solid;
+}
+/*NECESSARIO EM TODOS*/
+main {
+  margin-left: 240px; 
+  padding: 40px 24px;
+  min-height: 100vh;
+  background-color: #e5e3dd;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* ...existing code... */
+.lateral-header h1 {
+  font-size: 18px;
+  color: #ef7121;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pesquisa button {
+  padding: 10px 14px;
+  background-color: #4267B2;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chat-name i {
+  color: var(--azul-claro);
+  margin-right: 4px;
+}
+
+.chat-message i {
+  color: var(--laranja-principal);
+  margin-right: 4px;
+}
+
+.meio-icon {
+  font-size: 64px;
+  margin-bottom: 25px;
+  color: var(--azul-claro);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.meio h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #ef7121;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.meio button {
+  background-color: #4267B2;
+  border: none;
+  padding: 12px 24px;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  transition: background 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.meio button:hover {
+  background-color: #365899;
+}
+/* ...existing code... */
+    
